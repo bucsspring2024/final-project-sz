@@ -2,32 +2,17 @@
 
 :warning: Everything between << >> needs to be replaced (remove << >> after replacing)
 
-<<<<<<< HEAD
 #  Binghamton Assassins 
 ## CS110 Final Project   Spring, 2024 
 
 ## Team Members
 
  n/a 
-=======
-# Assassins
-## CS110 Final Project  Spring, 2024
-
-## Team Members
-
-n/a
-
->>>>>>> 3a2ebd303597e725539c4c387206e8e17a011667
 ***
 
 ## Project Description
 
-<<<<<<< HEAD
-<< Will be like the popular high school game Assassins, except playing against the computer. You will get three tries to shoot the computer while also being shot at. If dead, there is a chance for a revive. Goal is to kill the computer in the number of bullets given and also to not get killed. >>
-=======
-
 Will be like the popular high school game Assassins, except playing against the computer. You will get three tries to shoot the computer while also being shot at. If dead, there is a chance for a revive. Goal is to kill the computer in the number of bullets given and also to not get killed. 
->>>>>>> 3a2ebd303597e725539c4c387206e8e17a011667
 
 ***    
 
@@ -45,19 +30,11 @@ Will be like the popular high school game Assassins, except playing against the 
 
 ### Features
 
-<<<<<<< HEAD
 1. start menu
 2. moveable character
 3. level up after winning
 4. interactive objects
 5. revive feature
-=======
-1. << start menu >>
-2. << moveable characters >>
-3. << interactive objects >>
-4. << level up after winning option >>
-5. << revive option >>
->>>>>>> 3a2ebd303597e725539c4c387206e8e17a011667
 
 ### Classes
 
