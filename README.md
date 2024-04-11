@@ -2,18 +2,19 @@
 
 :warning: Everything between << >> needs to be replaced (remove << >> after replacing)
 
-# << Project Title >>
-## CS110 Final Project  << Semester, Year >>
+# Assassins
+## CS110 Final Project  Spring, 2024
 
 ## Team Members
 
-<< List team member names >>
+n/a
 
 ***
 
 ## Project Description
 
-<< Give an overview of your project >>
+
+Will be like the popular high school game Assassins, except playing against the computer. You will get three tries to shoot the computer while also being shot at. If dead, there is a chance for a revive. Goal is to kill the computer in the number of bullets given and also to not get killed. 
 
 ***    
 
