@@ -31,11 +31,11 @@
 
 ### Features
 
-1. << Feature 1 >>
-2. << Feature 2 >>
-3. << Feature 3 >>
-4. << Feature 4 >>
-5. << Feature 5 >>
+1. << start menu >>
+2. << moveable characters >>
+3. << interactive objects >>
+4. << level up after winning option >>
+5. << revive option >>
 
 ### Classes
 
