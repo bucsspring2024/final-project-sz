@@ -77,7 +77,7 @@ class Game:
         Args: None
         Returns: None
         """
-    def startmenu(self):
+    def start_menu(self):
         """
         The start menu shows up (shows a start button with instructions and explanation, possibly what level you are currently on)
         Args: None
