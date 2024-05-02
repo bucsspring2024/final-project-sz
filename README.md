@@ -39,37 +39,42 @@ Will be like the popular high school game Assassins, except playing against the 
 ### Classes
 
 class Player:
-    def __init__(self):
+    
+    def __init__(self, screen, x, y, img_file):
+        self.screen = screen
+        self.x = x
+        self.y = y
+        self.img_file = img_file
+        self.img = pygame.image.load(img_file)
+        self.bullets = 4
+    def move_right(self):
         """
-        Initialzes player object
-        Args: None
-        Returns: None
+        moves position right by 1
+        args: None
+        return: None
         """
-    def shoot(self):
+        self.x+=2
+    def move_left(self):
         """
-        actual shooting motion from the player to computer 
-        Args: None
-        Returns: None
+        moves position left by 1
+        args: None
+        return: None
         """
-    def revive(self):
+    def shoot(self, enemy):
+        self.bullets -= 1
+        if(self.bullets <= 0):
+            exit()
+        bullet = Bullet("./assets/bullet.png", self.screen, True, self.x + 124, self.y+50, enemy)
+        bullet.move()
         """
-        shows a revive question for player to answer
-        Args: None
-        Returns: None
+        creates bullet object
+        args: None
+        return: Bullet
         """
-class ComputerPlayer:
-    def __init__(self):
-        """
-        Initializes comp (player 2) object
-        Args: None
-        REturns: None
-        """
-    def shoot(self):
-        """
-        shooting motion from computer to player
-        Args: None
-        Returns: None
-        """
+    
+    def draw(self):
+        self.screen.blit(self.img, (self.x, self.y))
+        
 class Game:
     def __init__(self):
         """

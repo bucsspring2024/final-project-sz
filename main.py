@@ -3,6 +3,7 @@ from src.controller import Controller
 
 def main():
     controller = Controller("./assets/space.webp")
+    controller.mainloop()
     #Create an instance on your controller object
     #Call your mainloop
     
