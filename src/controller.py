@@ -25,7 +25,6 @@ class Controller:
         screen = pygame.display.set_mode((1080, 607))
         background = pygame.image.load(self.image_file)
         
-        
         player = Player(screen, 390, 400,"./assets/player.webp")
         enemy = Enemy(screen, 390, 0, "./assets/enemy/png")
         while(True):

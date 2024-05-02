@@ -23,6 +23,12 @@ class Bullet:
         self.img = pygame.image.load(img_link)
         self.sprite = sprite
     def move(self):
+        """updates pos of bullet, checks for collisions with the target sprite. program exits when that occurs
+        Args:
+            None
+        Returns:
+            None
+        """
         while(self.y > 0 if self.good else self.y < 607):
             self.y = self.y - 1 if self.good else self.y + 1
             self.screen.blit(self.img, (self.x, self.y))
