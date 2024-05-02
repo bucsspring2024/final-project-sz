@@ -7,7 +7,7 @@ class Bullet:
         Args:
             img_link (str): image file for the bullet
             link (_type_): _description_
-            screen: screen object that game is displayed
+            screen: screen object that bullet is drawn
             good (bool): bullet is enemy/player's 
             x (int): x coordinate of bullet
             y (int): y coordinate of bullet
