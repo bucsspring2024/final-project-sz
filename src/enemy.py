@@ -3,6 +3,14 @@ from src.bullet import Bullet
 import random
 class Enemy:
     def __init__(self, screen, x, y, img_file):
+        """initalizes enemy obj
+
+        Args:
+            screen (pygsme.Surface): surface where enemy is drawn
+            x (int): initial x coordinate of enemy
+            y (int): initial y coordinate of enemy
+            img_file (str): file path enemy sprite
+        """
         self.screen = screen
         self.x = x
         self.y = y
@@ -12,19 +20,27 @@ class Enemy:
         self.left = False
     def move_right(self):
         """
-        moves pos right by 1
+        moves pos right by 2
         args: None
         return: None
         """
         self.x+=2
     def move_left(self):
         """
-        moves position left by 1
+        moves position left by 2
         args: None
         return: None
         """
         self.x-=2
     def move(self, enemy):
+        """moves enemy horizontally, shoots random bullets
+
+        Args:
+            enemy: target enemy obj
+            
+        Returns:
+            None
+        """
         if(random.randint(1, 75) == 1):
             self.shoot(enemy)
         if(self.amountMove > 0):
@@ -40,9 +56,16 @@ class Enemy:
         bullet = Bullet("./assets/bad_bullet.png", self.screen, False, self.x + 150, self.y+200, enemy)
         bullet.move()
         """
-        creates a bullet object
-        args: None
-        return: Bullet
+        creates a bullet object, enables it to move
+        args: ebnemt: target enemy obj
+        return: 
         """
     def draw(self):
+        """
+        draw enemy sprite on screen
+        Args:
+            none
+        Returns: 
+            None
+        """
         self.screen.blit(self.img, (self.x, self.y))
