@@ -1,7 +1,20 @@
 import pygame
 import time
 class Bullet:
-    def __init__(self, img_link, link, screen, good, x, y, sprite):
+    def __init__(self, img_link, screen, good, x, y, sprite):
+        """initializes bullet obj
+
+        Args:
+            img_link (str): image file for the bullet
+            link (_type_): _description_
+            screen: screen object that game is displayed
+            good (bool): bullet is enemy/player's 
+            x (int): x coordinate of bullet
+            y (int): y coordinate of bullet
+            sprite: bullet's target
+        Returns: 
+            None
+        """
         self.screen = screen
         self.good = good
         self.x = x
