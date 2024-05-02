@@ -3,6 +3,14 @@ from src.player import Player
 from src.enemy import Enemy
 class Controller:
     def __init__(self, image_file):
+        """initializes controller object
+
+        Args:
+            image_file (str): file path for game bg
+            
+        Returns:
+            None 
+        """
         pygame.init()
         self.image_file = image_file
     
