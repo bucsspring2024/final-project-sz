@@ -7,6 +7,13 @@ class Controller:
         self.image_file = image_file
     
     def mainloop(self):
+        """
+        Controlls game flow
+        Args: 
+            None
+        Returns: 
+            None
+        """
         screen = pygame.display.set_mode((1080, 607))
         background = pygame.image.load(self.image_file)
         
@@ -26,7 +33,7 @@ class Controller:
             if(pressed[pygame.K_LEFT]):
                 player.move_left()
             if(pressed[pygame.K_RIGHT]):
-                player.move_left()
+                player.move_right()
             if(pressed[pygame.K_SPACE]):
                 player.shoot(enemy)
             enemy.move(player)
