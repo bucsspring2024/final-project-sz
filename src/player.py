@@ -3,6 +3,14 @@ from src.bullet import Bullet
 class Player:
     
     def __init__(self, screen, x, y, img_file):
+        """initialzes player obj
+
+        Args:
+            screen (pygame.Surface): surface that player is drawn
+            x (int): initial x coordinate of player
+            y (int): initial y coorrdinate of player
+            img_file (str): file path of image for player sprite
+        """
         self.screen = screen
         self.x = x
         self.y = y
@@ -11,14 +19,14 @@ class Player:
         self.bullets = 4
     def move_right(self):
         """
-        moves position right by 1
+        moves position right by 2
         args: None
         return: None
         """
         self.x+=2
     def move_left(self):
         """
-        moves position left by 1
+        moves position left by 2
         args: None
         return: None
         """
@@ -29,10 +37,18 @@ class Player:
         bullet = Bullet("./assets/bullet.png", self.screen, True, self.x + 124, self.y+50, enemy)
         bullet.move()
         """
-        creates bullet object
-        args: None
-        return: Bullet
+        creates bullet object, enables it to move
+        Args: 
+            enemy: target enemy obj
+        Returns: 
+            none
         """
     
     def draw(self):
+        """draws player sprite to screen
+        Args: 
+            None
+        Returns:
+            None
+        """
         self.screen.blit(self.img, (self.x, self.y))
