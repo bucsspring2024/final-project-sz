@@ -43,6 +43,8 @@ class Controller:
                         self.start_game(player, enemy)
                     elif event.key == pygame.K.RIGHT:
                         player.move_right()
+                    elif event.key == pygame.K_LEFT:
+                        player.move_left()
                     elif event.key == pygame.K_q:
                         running = False
             self.screen.blit(background, (0, 0))
