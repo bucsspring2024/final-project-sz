@@ -11,7 +11,7 @@
 
 ## Project Description
 
-Modeled loosely after the popular high school game Assassins, except playing against the computer. Player gets three tries to shoot the computer while also being shot at. If dead, there is a chance for a revive. Goal is to kill the computer in the number of bullets given and also to not get killed. 
+Modeled loosely after the popular high school game Assassins, except playing against the computer. Player gets three tries to shoot the computer while also being shot at. Goal is to kill the computer in the number of bullets given and also to not get killed. 
 
 ***    
 
@@ -34,8 +34,8 @@ The controller initializes the game, and orchestrates main loop. The player char
 1. start menu
 2. moveable character
 3. level up after winning
-4. interactive objects
-5. revive feature
+4. shooting enemies
+5. dodging bullets
 
 ### Classes
 
