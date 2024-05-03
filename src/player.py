@@ -30,6 +30,7 @@ class Player:
         args: None
         return: None
         """
+        self.x -= 2
     def shoot(self, enemy):
         self.bullets -= 1
         if(self.bullets <= 0):
