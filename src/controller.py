@@ -29,8 +29,8 @@ class Controller:
         """
         background = pygame.image.load(self.image_file)
         
-        player = Player(screen, 390, 400,"./assets/player.webp")
-        enemy = Enemy(screen, 390, 0, "./assets/enemy/png")
+        player = Player(self.screen, 390, 400,"./assets/player.webp")
+        enemy = Enemy(self.screen, 390, 0, "./assets/enemy/png")
         
         running = True 
         while running:
