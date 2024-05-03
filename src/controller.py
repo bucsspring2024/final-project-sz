@@ -15,7 +15,7 @@ class Controller:
         """
         pygame.init()
         self.image_file = image_file
-        self.screen = pygame.display.set_mde((1080, 607))
+        self.screen = pygame.display.set_mode((1080, 607))
         self.start_menu = StartMenu(self.screen)
         self.game_over = None
     
