@@ -4,7 +4,7 @@ class GameOver:
         self.screen = screen
         self.font = pygame.font.Font(None, 36)
         self.msg_surface = self.font.render(message, True, (255, 255, 255))
-        self.msg_rect = self.msg_surface.get_rect(center=(screen.get_wodth() // 2, screen.get_height() // 2))
+        self.msg_rect = self.msg_surface.get_rect(center=(screen.get_width() // 2, screen.get_height() // 2))
         
     def display(self):
         """displays game over message
