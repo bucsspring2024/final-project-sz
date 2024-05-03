@@ -39,23 +39,15 @@ class Controller:
                 if event.type == pygame.QUIT:
                     running = False
                 elif event.type == pygame.KEYDOWN:
-                    if event.key == pygame.K.SPACE:
-                        self.start_game(player, enemy)
-                    elif event.key == pygame.K.RIGHT:
+                    if event.key == pygame.K_RIGHT:
                         player.move_right()
                     elif event.key == pygame.K_LEFT:
                         player.move_left()
+                    elif event.key == pygame.K_SPACE:
+                        player.shoot(enemy)
                     elif event.key == pygame.K_q:
                         running = False
             self.screen.blit(background, (0, 0))
-                       
-            pressed = pygame.key.get_pressed()
-            if pressed[pygame.K_LEFT]:
-                player.move_left()
-            if pressed[pygame.K_RIGHT]:
-                player.move_right()
-            if pressed[pygame.K_SPACE]:
-                player.shoot(enemy)
             
             enemy.move(player)
             
