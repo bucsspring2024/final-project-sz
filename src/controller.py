@@ -61,6 +61,9 @@ class Controller:
             
             pygame.display.flip()
             
+        game_over_screen = GameOver(self.screen, "GAME OVER")
+        game_over_screen.display()
+                    
         pygame.quit()
                                         
         
