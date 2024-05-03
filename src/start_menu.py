@@ -13,7 +13,7 @@ class StartMenu:
         self.font = pygame.font.Font(None, 36)
         self.instr_text = "Press Space to start, or press Q to quit"
         self.instr_surface = self.font.render(self.instr_text, True, (255, 255, 255))
-        self.instr_rect = self.instr_surface.get_rect(center=(screen.get_wdith() // 2, screen.get_height() // 2))
+        self.instr_rect = self.instr_surface.get_rect(center=(screen.get_width() // 2, screen.get_height() // 2))
         
     def display(self):
         """enables start menu to show up on screen
