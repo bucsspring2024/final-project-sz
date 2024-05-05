@@ -30,12 +30,12 @@ class Bullet:
             None
         """
         while(self.y > 0 if self.good else self.y < 607):
-            self.y = self.y - 1 if self.good else self.y + 1
-            self.screen.blit(self.img, (self.x, self.y))
-            pygame.display.flip()
+             self.y = self.y - 1 if self.good else self.y + 1
+             self.screen.blit(self.img, (self.x, self.y))
+             pygame.display.flip()
         if(self.good):
-            if(abs((self.sprite.x + 150)-self.x) < 10):
+            if(abs((self.sprite.x + 150)-self.x ) < 10):
                 exit()
-            else: 
-                if(abs((self.sprite.x + 124)-self.x)< 10):
-                    exit()
+        else:
+            if(abs((self.sprite.x + 124)-self.x ) < 10):
+                exit()
