@@ -1,8 +1,9 @@
-import pygame
+from src.controller import Controller
 #import your controller
 
 def main():
-    pygame.init()
+    controller = Controller("./assets/space.webp")
+    controller.mainloop()
     #Create an instance on your controller object
     #Call your mainloop
     
